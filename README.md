@@ -15,4 +15,4 @@ Este es un proyecto simple de encriptador de texto desarrollado con HTML, CSS y 
 
 1. **Descarga o Clona el Repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/encriptador-de-texto.git
+   git clone https://github.com/encriptador-de-texto.git
