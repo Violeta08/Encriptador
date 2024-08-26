@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/alura.png" alt="Logo de Alura" class="logo">
+    </header>
+    
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <textarea id="input-text" placeholder="Escribe tu mensaje aquí..." oninput="validarEntrada(event)"></textarea>
+        <div id="char-count">0/100 caracteres</div>
+        <div class="buttons">
+            <button id="encriptar-btn" onclick="encriptarTexto()" disabled>Encriptar</button>
+            <button id="copiar-btn" onclick="copiarTexto()" disabled>Copiar</button>
+            <button id="desencriptar-btn" onclick="desencriptarTexto()" disabled>Desencriptar</button>
+        </div>
+        <textarea id="output-text" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        <div id="history">
+            <h2>Historial de Mensajes</h2>
+            <ul id="message-history"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Doraida Peñaranda. Proyecto de Encriptación de Texto.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
